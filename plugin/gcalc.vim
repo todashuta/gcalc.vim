@@ -10,7 +10,7 @@ set cpo&vim
 
 
 if !exists(':GCalc')
-  command! -nargs=+ -complete=custom,gcalc#complete GCalc
+  command! -nargs=+ -complete=customlist,gcalc#complete GCalc
       \ call gcalc#gcalc(<q-args>)
 endif
 

@@ -28,12 +28,12 @@ endfunction
 
 " Very Simple Completion.
 function! gcalc#complete(ArgLead, CmdLine, CursorPos)
-  return "
-        \binary\n
-        \octal\n
-        \decimal\n
-        \hexdecimal\n
-        \"
+  return [
+        \ 'binary',
+        \ 'octal',
+        \ 'decimal',
+        \ 'hexdecimal'
+        \ ]
 endfunction
 
 
